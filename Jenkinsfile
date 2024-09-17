@@ -1,6 +1,6 @@
 pipeline {
     agent {
-        label 'jenkins-slave' // This is the agent used for the pipeline
+        label 'testultimate' // This is the agent used for the pipeline
     }
 
     stages {
