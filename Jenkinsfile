@@ -10,7 +10,7 @@ pipeline {
                 // Using credentialsId to pass SSH credentials
                 git url: 'git@github.com:sudhvihaan/connectiontest.git', 
                     branch: 'main',
-                    credentialsId: 'vault-ssh-pvt-key-github'
+                    credentialsId: 'nonvault-ssh-private-key-jenkins-server'
             }
         }
     }
