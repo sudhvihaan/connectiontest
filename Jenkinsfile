@@ -7,7 +7,10 @@ pipeline {
         stage('clone_test') {
             steps {
                 echo 'Cloning repository...'
-                git url: 'https://github.com/sudhvihaan/djangoApp1.git', branch: 'main'
+                // Using credentialsId to pass SSH credentials
+                git url: 'git@github.com:sudhvihaan/connectiontest.git', 
+                    branch: 'main',
+                    credentialsId: 'vault-ssh-pvt-key-github'
             }
         }
     }
