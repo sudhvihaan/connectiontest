@@ -7,12 +7,10 @@ pipeline {
         stage('clone_test') {
             steps {
                 echo 'Cloning repository...'
-                // Using credentialsId to pass SSH credentials
-               // git url: 'git@github.com:sudhvihaan/connectiontest.git', 
-                   // branch: 'main',
-                   // credentialsId: 'nonvault-ssh-private-key-jenkins-server'
+                // Using a shell command to clone the repository
+                sh 'git clone git@github.com:sudhvihaan/connectiontest.git'
+                credntial 
             }
         }
     }
 }
-
