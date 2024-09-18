@@ -8,9 +8,9 @@ pipeline {
             steps {
                 echo 'Cloning repository...'
                 // Using credentialsId to pass SSH credentials
-                git url: 'git@github.com:sudhvihaan/connectiontest.git', 
-                    branch: 'main',
-                    credentialsId: 'nonvault-ssh-private-key-jenkins-server'
+               // git url: 'git@github.com:sudhvihaan/connectiontest.git', 
+                   // branch: 'main',
+                   // credentialsId: 'nonvault-ssh-private-key-jenkins-server'
             }
         }
     }
